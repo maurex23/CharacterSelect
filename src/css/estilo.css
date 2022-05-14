@@ -4,13 +4,14 @@ body{
 }
 body::before{
     content: "";
-    background-image: url(../imagens/bg.gif);
+    /* background-image: url(../imagens/bg.gif); */
+    background-image: url(../imagens/giphy.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: .2;
     position: absolute;
     
 }
@@ -38,7 +39,7 @@ main{
     font-size: 52px;
     line-height: 102px;
     -webkit-text-stroke: 2px var(--cor-titulo-forte);
-    
+
 }
 .cabecalho .logo{
     width: 100px;
@@ -64,7 +65,8 @@ main{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%); 
+    max-height: 80vh ;
 }
 .selecao-de-personagens .personagem-grande .nome::before{
     content: "";
@@ -73,12 +75,24 @@ main{
     position: absolute;
     bottom: -15px;
     left: 0;
+    /* z-index: 1; */
+}
+.selecao-de-personagens .personagem-grande .nome{
+    position: relative;
+    top: 120%;
+    
 }
 .selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome::before{
     background-color: var(--cor-azul-principal);
+    border-right: 5px solid rgb(32, 0, 145);
+    border-bottom: 5px solid rgb(32, 0, 145);
+
 }
 .selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before{
     background-color: var(--cor-vermelha-principal);
+    border-right: 5px solid rgb(136, 0, 0);
+    border-bottom: 5px solid rgb(136, 0, 0);
+
 }
 .selecao-de-personagens .personagem-grande .nome h2{
     color: var(--cor-padrao);
@@ -87,6 +101,7 @@ main{
     bottom: 0px;
     width: 100%;
     font-size: 27px;
+
 }
 
 .selecao-de-personagens .lista-de-personagens{
@@ -137,7 +152,7 @@ main{
     position: absolute;
     top: 5px;
     left: 5px;
-    color: var(--cor-azul-media);
+    color: var(--cor-secundaria);
     transition: opacity .3s ease-in-out;
     animation: alternate;
     animation: text-glowing-blue .4s ease-in-out infinite;
@@ -155,3 +170,27 @@ main{
     animation-direction: alternate;
 }
 
+.batlle-button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: radial-gradient(red,blue);
+    border: 3px solid black;
+    border-radius: 40mm;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 2px red ;
+}
+.batlle-button img{
+    width: 100%;
+    height: 100%;
+}
+.batlle-button:hover{
+    transform: scale(1.07);
+    animation: c-glowing-black .4s ease-in-out infinite;
+    animation-direction: alternate
+}

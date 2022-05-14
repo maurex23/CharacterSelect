@@ -9,9 +9,19 @@
     }
   }
   
+  @keyframes c-glowing-black {
+    0% {
+      box-shadow: 0 0 5px var(--cor-secundaria), 0 0 5px var(--cor-secundaria), 0 0 15px var(--cor-secundaria), 0 0 20px var(--cor-secundaria), 0 0 10px var(--cor-secundaria), 0 0 10px var(--cor-secundaria), 0 0 10px var(--cor-secundaria), 0 0 10px var(--cor-secundaria)
+    }
+  
+    to {
+      box-shadow: 0 0 2.5px var(--cor-secundaria), 0 0 2.5px var(--cor-secundaria), 0 0 7.5px var(--cor-secundaria), 0 0 10px var(--cor-vermelha-secundaria), 0 0 5px var(--cor-vermelha-secundaria), 0 0 5px var(--cor-vermelha-secundaria), 0 0 5px var(--cor-vermelha-secundaria), 0 0 2px var(--cor-vermelha-secundaria)
+    }
+  }
+  
   @keyframes c-glowing-red {
     0% {
-      box-shadow: 0 0 5px var(--cor-marrom-fraco), 0 0 5px var(--cor-marrom-fraco), 0 0 15px var(--cor-marrom-fraco), 0 0 20px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal)
+      box-shadow: 0 0 5px rgb(218, 0, 0), 0 0 5px rgb(218, 0, 0) , 0 0 15px rgb(218, 0, 0) , 0 0 20px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal), 0 0 10px var(--cor-vermelha-principal)
     }
   
     to {
