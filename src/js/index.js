@@ -16,7 +16,7 @@ OBJATIVO 2 - quando passar o mouse em cima do personagem trocar a imagem e o nom
 const personagens = document.querySelectorAll('.personagem')
 
 personagens.forEach((personagem) => {
-    personagem.addEventListener('mouseenter', () => {
+    personagem.addEventListener('click', () => {
         const idSelecionado = personagem.attributes.id.value;
         
         if(idSelecionado === 'octopus') return;
@@ -33,6 +33,11 @@ personagens.forEach((personagem) => {
         const nomeJogador1 = document.getElementById('nome-jogador-1');
         const nomeSelecionado = personagem.getAttribute('data-name');
         nomeJogador1.innerHTML = nomeSelecionado
+        
+        //OBJETIVO 3
+        
+        const botao = document.querySelector('#botao')
+        botao.href = `${idSelecionado}.html`
     });
 })
 
