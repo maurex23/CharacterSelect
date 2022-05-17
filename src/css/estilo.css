@@ -1,8 +1,8 @@
-body{
+html{
     font-family: 'ssf4', Courier, monospace;
     background: var(--cor-vermelha-principal);
 }
-body::before{
+html::before{
     content: "";
     /* background-image: url(../imagens/bg.gif); */
     background-image: url(../imagens/giphy.gif);
